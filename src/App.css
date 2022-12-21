@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pagenation-btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.pagenation-btn button {
+  padding: 3px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.pagenation-btn button:hover {
+  background-color: gray;
   color: white;
 }
+/* PEOPLE */
 
-.App-link {
-  color: #61dafb;
+.single-person-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 100px;
+  padding: 10px;
+  width: 250px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 25px 5px rgb(144, 196, 22);
+  height: fit-content;
+}
+.person-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+.person-container h2,
+h4 {
+  text-decoration: underline;
+  margin: 5px;
+}
+.person-container p {
+  margin: 3px;
+}
+.person-container small {
+  font-size: 12px;
+}
+.person-container h5 {
+  font-size: 15px;
+  margin: 0px;
+}
+.person-container ul {
+  font-size: 10px;
+  padding: 0;
+  margin: 0px;
+}
+/* PLANETS */
+
+.single-planet-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 100px;
+  padding: 10px;
+  width: 250px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 25px 5px rgb(144, 196, 22);
+  height: fit-content;
+}
+.planet-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-info,
+label {
+  border-radius: 5px;
+  text-decoration: underline;
+  border: 0px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar,
+.search-classification {
+  padding: 4px;
+  margin: 4px;
+  border-radius: 10px;
+}
+.search-button {
+  border-radius: 10px;
+}
+.search-button:hover {
+  background-color: gray;
+  color: white;
+}
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
